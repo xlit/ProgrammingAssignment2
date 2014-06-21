@@ -1,5 +1,5 @@
 ## The following two functions "makeCacheMatrix" and "cacheSolve" are used to
-## create a special object that stores a square invertible matrix and cache's
+## create a special object that stores a square invertible matrix and caches
 ## its inverse matrix. 
 
 ## The first function "makeCacheMatrix" creats, for a given square invertible 
@@ -25,10 +25,10 @@ makeCacheMatrix <- function(x = matrix()) {
          getsolve = getsolve)
 }
 
-## The second function "casheSolve" computes the inverse of the special "matrix" 
-## returned by makeCacheMatrix above. If the inverse has already been calculated
-## (and the matrix has not changed), then the cachesolve should retrieve the 
-## inverse from the cache.
+## The second function "casheSolve" computes the inverse of the inputting special
+##  "matrix" returned by makeCacheMatrix above. If the inverse has already been 
+## calculated (and the matrix has not changed), then the cachesolve should retrieve 
+## the inverse from the cache.
 
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of the original matrix 'x' as in the 
