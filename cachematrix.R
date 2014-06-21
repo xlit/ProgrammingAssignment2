@@ -11,7 +11,6 @@
 
 makeCacheMatrix <- function(x = matrix()) {
     ## 'x' is a square invertible matrix 
-    
     inv <- NULL
     set <- function(y) {
         x <<- y
