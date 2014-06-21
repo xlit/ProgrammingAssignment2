@@ -2,7 +2,7 @@
 ## create a special object that stores a square invertible matrix and caches
 ## its inverse matrix. 
 
-## The first function "makeCacheMatrix" creats, for a given square invertible 
+## The first function "makeCacheMatrix" creates, for a given square invertible 
 ## matrix, a special "matrix" object which is really a list of functions to
 ## 1) set the value of the matrix
 ## 2) get the value of the matrix
@@ -24,10 +24,10 @@ makeCacheMatrix <- function(x = matrix()) {
          getsolve = getsolve)
 }
 
-## The second function "casheSolve" computes the inverse of the inputting special
-##  "matrix" returned by makeCacheMatrix above. If the inverse has already been 
-## calculated (and the matrix has not changed), then the cachesolve should retrieve 
-## the inverse from the cache.
+## The second function "casheSolve" computes the inverse of the special "matrix" 
+## returned by makeCacheMatrix above. If the inverse has already been calculated
+## (and the matrix has not changed), then the cachesolve should retrieve the
+## inverse from the cache.
 
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of the original matrix 'x' as in the 
